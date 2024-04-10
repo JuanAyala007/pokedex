@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
+}
+.form-input {
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 200px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: inset 1px 1px 5px #000000ab;
+    color: #242222;
+  }
+
+  .button {
+    height: 50px;
+    width: 120px;
+    border: 2px solid #FE1936;
+    border-radius: 0 10px 10px 0 ;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button:hover {
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .type1::after {
+    content: "Go!";
+    height: 50px;
+    width: 120px;
+    background-color: #FE1936;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1::before {
+    content: "Lets start";
+    height: 50px;
+    width: 120px;
+    background-color: #fff;
+    color: #FE1936;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }

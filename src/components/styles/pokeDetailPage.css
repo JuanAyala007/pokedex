@@ -1,0 +1,219 @@
+.header {
+    width: 100%;
+}
+.header--red {
+    width: 100%;
+    height: 80px;
+    background-color: #FE1936;
+    position: absolute;
+    top: 0;
+}
+.header--black {
+    width: 100%;
+    height: 35px;
+    background-color: #252525;
+    position: absolute;
+    bottom: 0;
+}
+.header-img {
+    position: absolute;
+    top: 15px;
+    left: 5%;
+}
+.header-img img {
+    width: 300px;
+}
+.card-article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-container {
+    width: min(800px, 100%);
+    margin-top: 120px;
+    box-shadow: 0 2px 5px #0c0c0c34;
+    border-radius: 10px;
+    border: 5px solid #968c8c46;
+}
+.header-card {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-image {
+    width: min(250px, 60%);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -100px;
+    
+}
+.header-name {
+    text-align: center;
+    margin: 1em;
+}
+.bg-electric {
+    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+}
+.bg-water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+.bg-fire {
+background:linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+.bg-grass {
+background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+
+}
+.bg-bug {
+   background:  linear-gradient(0deg, rgba(165, 243, 215, 1) 0%, rgba(0, 143, 112, 1) 100%);
+}
+.bg-poison {
+    background: linear-gradient(0deg, rgba(250, 233, 254, 1) 0%, rgba(192, 79, 230, 1) 100%);
+}
+.bg-normal {
+    background: linear-gradient(0deg, rgb(110, 99, 112) 0%, rgb(160, 17, 65) 100%);
+}
+.container-name {
+    padding: 1em 1em 0 1em;
+}
+.id-container {
+    text-align: center;
+    margin-top: 1em;
+}
+.card-id {
+    border: 0.1em solid #252525;
+    padding: 0.4em;
+    font-weight: 700;
+}
+.card-weight-height {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.weight-height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.weight-height-span {
+    font-size: 14px;
+    color: #0c0c0c99;
+    font-weight: 300;
+}
+.hr {
+    width: 90%;
+    margin-bottom: 1em;
+}
+.body-card {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.type-ability {
+    text-align: center;
+}
+.type-span {
+    display: block;
+    margin-bottom: 10px;
+    color: #0c0c0c99;
+}
+.type-ability-fill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.type-ability-result {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+.type-result-ability {
+    text-transform: capitalize;
+    padding: 5px 20px;
+    font-weight: 600;
+    border: 1px solid #0c0c0c99;
+}
+.stats-container {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.stats-title {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+.stats-info {
+    padding: 1em;
+    margin-bottom: 15px;
+}
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.stats-name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+.progress-bar-container {
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+}
+.progress-stat {
+    height: 100%;
+}
+.movements {
+    width: min(800px, 100%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #0c0c0c34;
+    position: relative;
+    margin: 2em;
+    border: 5px solid #968c8c46;
+}
+.movements-title {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+.movements-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(180px, 1fr)
+    );
+    gap: 15px 25px;
+    margin: 3em;
+}
+.movements-tags {
+    width: 100%;
+    border-radius: 35px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
