@@ -1,106 +1,132 @@
 .card-container-results {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(150px,
-    1fr)
-  );
+  display: flex;
 }
 
 .card {
-    width: 100%;
-    max-width: 23em;
-    margin: 2rem;
-    border: 0.4em solid #ccc;
-    border-radius: 0.8em;
+  width: 100%;
+  max-width: 23em;
+  margin: 1rem;
+  border: 0.4em solid #ccc;
+  border-radius: 0.8em;
 }
 .card-header {
-    width: 100%;
-    aspect-ratio: 1.8;
-    position: relative;
-    border-radius: 0.5em;
+  width: 100%;
+  aspect-ratio: 1.8;
+  position: relative;
+  border-radius: 0.5em;
 }
 .card-img {
-    position: absolute;
-    width: 60%;
-    top: 2em;
-    left: 50%;
-    transform: translate(-50%);
+  position: absolute;
+  width: 60%;
+  top: 2em;
+  left: 50%;
+  transform: translate(-50%);
 }
 .card-principal {
-    margin-top: 3.5em;
+  margin-top: 3.5em;
 }
-.card-name{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.2em;
+.card-name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2em;
 }
 .card-types {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .card-type {
-    display: flex;
+  display: flex;
 }
 .card-type:not(:nth-child(1))::before {
-    content: "/";
-    padding-right: 0.5em;
+  content: "/";
+  padding-right: 0.5em;
 }
 .card-hr {
-    margin: 1px solid ;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-inline: 2em
+  margin: 1px solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-inline: 2em;
 }
 .card-stats {
-    padding: 1em 1em 2em ;
+  padding: 1em 1em 2em;
 }
 .card-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1em;
 }
 .card-stats-list {
-    justify-self: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    font-size: 11px;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
 }
 .card-stats-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: #8d8484ec;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8d8484ec;
 }
 .card-stats-value {
-    font-size: 1.4rem;
-    font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 .color-electric {
-    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+  background: linear-gradient(
+    179.75deg,
+    #0c1395 -19.96%,
+    #2b319b 43.67%,
+    #7075d9 138.4%
+  );
 }
 .color-water {
-    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  background: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
 }
 .color-fire {
-background:linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  background: linear-gradient(
+    176.37deg,
+    #f96d6f -32.26%,
+    #e35825 22.55%,
+    #e8ae1b 125.72%
+  );
 }
 .color-grass {
-background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
-
+  background: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
 }
 .color-bug {
-   background:  linear-gradient(0deg, rgba(165, 243, 215, 1) 0%, rgba(0, 143, 112, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(165, 243, 215, 1) 0%,
+    rgba(0, 143, 112, 1) 100%
+  );
 }
 .color-poison {
-    background: linear-gradient(0deg, rgba(250, 233, 254, 1) 0%, rgba(192, 79, 230, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 233, 254, 1) 0%,
+    rgba(192, 79, 230, 1) 100%
+  );
 }
 .color-normal {
-    background: linear-gradient(0deg, rgb(110, 99, 112) 0%, rgb(160, 17, 65) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(110, 99, 112) 0%,
+    rgb(160, 17, 65) 100%
+  );
 }
